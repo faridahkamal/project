@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Newsletter</title>
+    <link rel="shortcut icon" type="image/png" href="apple.png"/>
+<link href="blog.css" rel="stylesheet">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<script type="text/javascript">
+  function showDate() {
+    var d = new Date();
+    var curr_date = d.getDate();
+    var curr_month = d.getMonth() + 1; //months are zero based
+    var curr_year = d.getFullYear();
+    document.write(curr_date + "-" + curr_month + "-" + curr_year);
+  }
+</script>
+</head>
+<body>
+    
+<button type="button" id="myBtn">Click Me</button>
+<script src="script.js"></script>
+
+<script type="text/javascript">showDate();</script>
+
+<div class="header">
+  <h1>Newsletter</h1>
+    <table>
+        <tr>
+  <div class="dropup">
+        <button class="dropbtn"><a href="index.html">HOME</a></button>        
+    </div>
+    <div class="dropup">
+        <button class="dropbtn"><a href="about.html">About</a></button>
+    </div>
+    <div class="dropup">
+        <button class="dropbtn"><a href="recipe.html">Recipes</a></button>
+            <div class="dropup-content">
+                <a href="healthy.html">Healthy</a>
+                <a href="junk.html">Junk</a>
+                <a href="medicinal.html">Medicinal</a>
+            </div>
+    </div>
+    <div class="dropup">
+        <button class="dropbtn"><a href="newsletter.html">Sign Up for My Newsletter!</a></button>        
+    </div>
+        </tr>
+    </table>
+</div>
+    
+<div class="row">
+  <div class="leftcolumn">
+    <div class="card">
+      <h2>NEWSLETTER</h2>
+      <form action="action_page.php">
+  <div class="container">
+    <h2>Subscribe to our Newsletter</h2>
+  </div>
+
+  <div class="container" style="background-color:white">
+    <input type="text" placeholder="Name" name="name" required>
+    <input type="text" placeholder="Email address" name="mail" required>
+    <label>
+      <input type="checkbox" checked="checked" name="subscribe"> Daily Newsletter
+    </label>
+  </div>
+
+  <div class="container">
+    <input type="submit" value="Subscribe">
+  </div>
+</form>
+
+<script type="text/javascript">
+function validateForm() {
+if (isEmpty(document.getElementById('data_2').value.trim())) {
+alert('NAME is required!');
+return false;
+}
+if (isEmpty(document.getElementById('data_4').value.trim())) {
+alert('EMAIL is required!');
+return false;
+}
+if (!validateEmail(document.getElementById('data_4').value.trim())) {
+alert('EMAIL must be a valid email address!');
+return false;
+}
+return true;
+}
+function isEmpty(str) { return (str.length === 0 || !str.trim()); }
+function validateEmail(email) {
+var re = /^([\w-]+(?:\.[\w-]+)*)@((?:[\w-]+\.)*\w[\w-]{0,66})\.([a-z]{2,15}(?:\.[a-z]{2})?)$/i;
+return isEmpty(email) || re.test(email);
+}
+</script>
+    </div>
+  </div>
+  <div class="rightcolumn">
+    <div class="card">
+      <h2>Other Recipes</h2>
+      <div class="fakeimg"><img src="pic/carrotcakecheesecake.png"></div>
+        <p><a href="carrotcakecheesecake.html">Carrot Cake-Cheesecake</a></p>
+    </div>
+    <div class="card">
+      <h3>Popular Post</h3>
+      <div class="fakeimg"><img src="">Coming Soon</div><br>
+      <div class="fakeimg"><img src="">Coming Soon</div><br>
+      <div class="fakeimg"><img src="">Coming Soon</div>
+    </div>
+    <div class="card">
+      <h3>Follow Me</h3>
+      <p>Coming Soon</p>
+    </div>
+  </div>
+</div>
+
+<div class="footer">
+  <h2>This is a school project and every recipe here belongs to <a href="https://www.foodnetwork.com/">Food Network</a> and not to be intended for monetization</h2>
+    <h4>Started:-3/1/2022<br>
+        Finished:-24/1/2022
+    </h4>
+</div>
+
+</body>
+</html>

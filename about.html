@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>About</title>
+<link rel="shortcut icon" type="image/png" href="apple.png"/>
+<link href="blog.css" rel="stylesheet">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<script type="text/javascript">
+  function showDate() {
+    var d = new Date();
+    var curr_date = d.getDate();
+    var curr_month = d.getMonth() + 1; //months are zero based
+    var curr_year = d.getFullYear();
+    document.write(curr_date + "-" + curr_month + "-" + curr_year);
+  }
+</script>
+</head>
+<body>
+    
+<button type="button" id="myBtn">Click Me</button>
+<script src="script.js"></script>
+
+<script type="text/javascript">showDate();</script>
+<div class="header">
+  <h1>About</h1>
+    <table>
+        <tr>
+     <div class="dropup">
+        <button class="dropbtn"><a href="index.html">HOME</a></button>        
+    </div>
+    <div class="dropup">
+        <button class="dropbtn"><a href="about.html">About</a></button>
+    </div>
+    <div class="dropup">
+        <button class="dropbtn"><a href="recipe.html">Recipes</a></button>
+            <div class="dropup-content">
+                <a href="healthy.html">Healthy</a>
+                <a href="junk.html">Junk</a>
+                <a href="medicinal.html">Medicinal</a>
+            </div>
+    </div>
+    <div class="dropup">
+        <button class="dropbtn"><a href="newsletter.html">Sign Up for My Newsletter!</a></button>        
+    </div>
+        </tr>
+    </table>
+</div>
+
+<div class="row">
+  <div class="leftcolumn">
+    <div class="card">
+      <h2>About Me</h2>
+      <h5>Hi,you found me and my blog :)</h5>
+      <div class="fakeimg"><img src="pic/girl.jpeg"></div>
+      <p>My name is Faridah(like the blog says)and i'm a food lover and a web developer.This is a school project and every recipe here belongs to <a href="https://www.foodnetwork.com/">Food Network</a> and not to be intended for monetization</p>
+    </div>
+    <div class="card">
+      <h2>About My Blog</h2>
+      <h5>Created, Jan 24, 2022. 1:11am</h5>
+      <div class="recipeheader" style="background-image: url('pic/kuchisabishii.png');"></div>
+      <p>Originally..</p>
+      <p>The name of my blog was supposed to be Faridah's Recipe, as it was the name I chose for it when doing my 3rd lab assignment. Yes, this is a school project and so far the most impressive HTML + CSS + Javascript work I've done. <br> Anyway, back to my story. Along the way, I fell in love with web design and the project as it consisted of several things I liked: blogging, food, designing, and playing around with colours. <br>The more invested I became in this project, the more I looked for ways to make it almost perfect and professional, and that's when I came across the Japanese word "Kuchisabishii," which literally translates to eating when one's mouth is lonely rather than hungry, a feeling I, and I'm sure many others, were familiar with.<br>That's about my blog and the name behind it. Enjoy:)</p>
+    </div>
+  </div>
+  <div class="rightcolumn">
+    <div class="card">
+      <h2>Other Recipes</h2>
+      <div class="fakeimg"><img src="pic/hcm1.jpeg"></div>
+        <p><a href="hcm.html">Herbed Chicken Marsala</a></p>
+    </div>
+    <div class="card">
+      <h3>Popular Post</h3>
+      <div class="fakeimg"><img src="">Coming Soon</div><br>
+      <div class="fakeimg"><img src="">Coming Soon</div><br>
+      <div class="fakeimg"><img src="">Coming Soon</div>
+    </div>
+    <div class="card">
+      <h3>Follow Me</h3>
+      <p>Coming Soon</p>
+    </div>
+  </div>
+</div>
+
+<div class="footer">
+  <h2>This is a school project and every recipe here belongs to <a href="https://www.foodnetwork.com/">Food Network</a> and not to be intended for monetization</h2>
+</div>
+</body>
+</html>
